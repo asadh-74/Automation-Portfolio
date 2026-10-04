@@ -14,6 +14,9 @@ function visualFor(kind) {
     vision:'<div class="vision-scene"><div class="detection"><span>object / A</span></div><div class="detection second"><span>object / B</span></div></div>',
     crew:'<div class="crew"><div class="crew-agent">⌕</div><div class="crew-agent">✳</div><div class="crew-agent">≡</div></div>',
     board:'<div class="board"><div class="board-col"><i></i><div class="board-card"></div><div class="board-card"></div></div><div class="board-col"><i></i><div class="board-card"></div></div><div class="board-col"><i></i><div class="board-card"></div><div class="board-card"></div></div></div>',
+    semantic:'<div class="workflow"><div class="flow-node"><b>↳</b><span>ENCODE</span></div><div class="flow-node main-node"><b>⌁</b><span>CHANNEL</span></div><div class="flow-node"><b>↗</b><span>DECODE</span></div></div><span class="flow-label">MEANING · CODING · RECOVERY</span>',
+    battery:'<div class="research-visual"><span>EV / BATTERY INTELLIGENCE</span><div class="battery-outline"><i></i><i></i><i></i></div><p>SENSE → ESTIMATE → MONITOR</p></div>',
+    energy:'<div class="research-visual"><span>CONNECTED / ENERGY METER</span><div class="meter-wave">⌁</div><p>MEASURE → TRANSMIT → VISUALIZE</p></div>',
     fleet:'<div class="radar-visual"><i></i><i></i></div>',
     rf:'<svg class="signal-art" viewBox="0 0 260 120"><path class="gridline" d="M0 30H260M0 60H260M0 90H260M40 0V120M100 0V120M160 0V120M220 0V120"/><path class="wave" d="M0 76L18 74 25 66 30 81 35 58 39 91 44 36 48 104 52 17 56 105 60 37 66 85 72 63 78 78 90 74 108 75 120 67 128 83 136 52 142 90 148 29 154 97 160 49 166 84 172 66 180 74 202 76 210 61 216 88 222 42 228 99 234 63 240 79 250 74 260 75"/><text x="6" y="15">SIGNAL → FEATURES → CLASS</text></svg>'
   };

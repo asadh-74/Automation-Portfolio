@@ -438,14 +438,14 @@ window.PORTFOLIO_PROJECTS = [
       "ESP32",
       "MQTT",
       "Flask",
-      "GPS"
+      "SQL Server"
     ],
     "description": "An end-to-end telemetry system connecting embedded devices, location data, and a live fleet dashboard.",
     "challenge": "Device telemetry needs a complete path from hardware and communication protocols to a backend that makes the data useful.",
     "built": [
-      "Integrated ESP32 devices with GPS, RFID, and communication components during an engineering internship at HIT.",
-      "Connected device messages over MQTT to a Flask backend.",
-      "Helped deliver the fleet management platform and live telemetry dashboard for deployment."
+      "Integrated ESP32 devices with GPS and LTE/cellular communication during an engineering internship at RDC, Heavy Industries Taxila.",
+      "Connected telemetry over MQTT/GPRS to a Flask backend with SQL Server persistence.",
+      "Built a live map dashboard for tracking fleet telemetry."
     ],
     "note": "Internship deployment described at a high level. No public source repository is linked for this work.",
     "featured": false
@@ -473,6 +473,81 @@ window.PORTFOLIO_PROJECTS = [
       "Explored classification of FHSS, OFDM, and FSK signals with embedded integration."
     ],
     "note": "Engineering project overview focused on detection and classification. No public source repository is linked for this work.",
+    "featured": false
+  },
+  {
+    "id": "semantic",
+    "title": "Lite Semantic Communication",
+    "type": "APPLIED AI / COMMUNICATION SYSTEMS",
+    "areas": [
+      "ml",
+      "embedded"
+    ],
+    "visual": "semantic",
+    "tags": [
+      "MATLAB",
+      "Verilog",
+      "DSP",
+      "FEC"
+    ],
+    "description": "A final-year project exploring meaning-focused communication with an FEC encoder/decoder and a DSP implementation.",
+    "challenge": "Communication links have limited capacity. The project investigates how to represent useful information and recover it through a coded communication pipeline.",
+    "built": [
+      "Developed the semantic communication and FEC pipeline in MATLAB.",
+      "Worked on synthesizable Verilog for the encoder/decoder implementation.",
+      "Connected the research to a DSP-kit implementation workflow."
+    ],
+    "note": "Ongoing final-year project. No measured bandwidth reduction or hardware performance is claimed here.",
+    "featured": false
+  },
+  {
+    "id": "battery",
+    "title": "EV Battery Intelligence",
+    "type": "APPLIED ML / EMBEDDED RESEARCH",
+    "areas": [
+      "ml",
+      "embedded"
+    ],
+    "visual": "battery",
+    "tags": [
+      "BMS",
+      "SOC / SOH",
+      "ML",
+      "IoT"
+    ],
+    "description": "Battery monitoring research connecting sensing, state estimation, remaining-range prediction, and cloud visibility.",
+    "challenge": "Useful EV battery monitoring connects physical measurements with models that explain battery state and estimated remaining range.",
+    "built": [
+      "Designed a battery-management monitoring circuit.",
+      "Worked on an AI model for remaining vehicle-range estimation.",
+      "Explored SOC/SOH estimation and cloud-connected BMS monitoring."
+    ],
+    "note": "Ongoing research described in the supplied portfolio. Model accuracy and field validation are not published.",
+    "featured": false
+  },
+  {
+    "id": "energy",
+    "title": "IoT Smart Energy Meter",
+    "type": "EMBEDDED / DATA INTEGRATION",
+    "areas": [
+      "embedded",
+      "software"
+    ],
+    "visual": "energy",
+    "tags": [
+      "ESP32",
+      "Proteus",
+      "IoT",
+      "Dashboard"
+    ],
+    "description": "A metering node that connects consumption measurements to a utility-facing web dashboard.",
+    "challenge": "Meter readings become more useful when consumption data can be viewed remotely through a clear software interface.",
+    "built": [
+      "Designed an ESP32-based metering node and modeled it in Proteus.",
+      "Connected consumption readings to a web dashboard.",
+      "Brought sensing, embedded logic, and monitoring into one workflow."
+    ],
+    "note": "Engineering prototype. No utility certification or commercial deployment is claimed.",
     "featured": false
   }
 ];

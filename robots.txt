@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://automation-portfolio-steel.vercel.app/sitemap.xml

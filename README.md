@@ -1,16 +1,18 @@
-# Asad Hussain — AI, Full Stack & Automation
+# Asad Hussain — AI, Software & Automation
 
-A responsive personal portfolio built with HTML, CSS, and JavaScript. No framework, build step, external font service, or runtime API key is required.
+A responsive portfolio with 22 projects, built with HTML, CSS, and JavaScript. No framework, build step, runtime API key, or external font service is needed.
 
-## What changed
+Production domain: https://automation-portfolio-steel.vercel.app/
 
-- A focused dark design with an original SVG network illustration and lightweight project visuals.
-- Nineteen projects, retaining the original portfolio’s work and adding current repository-backed applications such as Career Atlas and Bid Monitor.
-- Area filters, text search, shareable filter URLs, an empty state, and expandable project details. Eight selected projects appear initially.
-- Mobile navigation, keyboard-accessible dialogs and background tabs, visible focus styles, and reduced-motion support.
-- Original portrait plus separate Experience, Education, Training, and Certificates panels based on the supplied CVs.
-- A working CV-request email link. The supplied PDFs are available only in the owner-private Sites preview until public distribution is approved.
-- Direct email and copy-email actions replace the original form’s false “sent” message. Unverified social links are omitted.
+## Experience for visitors
+
+- AI agents, automation and software appear first; embedded and RF work remains discoverable.
+- Project cards include technology stacks, descriptions, source links where available, and detailed case studies.
+- Search, area filters, shareable filter URLs, empty-state recovery, and a show-all control.
+- Mobile navigation, keyboard-accessible dialogs and background tabs, visible focus, and reduced motion.
+- Experience, education, training, certificates and leadership, updated using the supplied portfolio document.
+- Working email and LinkedIn links, copy-email action, and CV request by email.
+- Open Graph and Twitter metadata, a 1200 × 630 sharing image, canonical URL, robots.txt and sitemap.
 
 ## Run locally
 
@@ -18,30 +20,30 @@ A responsive personal portfolio built with HTML, CSS, and JavaScript. No framewo
 python -m http.server 4174
 ```
 
-Open http://localhost:4174. A static host can serve the repository root directly.
+Open http://localhost:4174. Serve the repository root directly.
 
-## Content and design
+## Vercel
+
+Import this repository, choose **Other** as the framework preset, leave the build command empty, and use the repository root as the output directory. If it is already connected, a commit to `main` triggers the configured production deployment.
+
+The existing review branch is excluded from automatic deployment in `vercel.json`. Production deployment from `main` is enabled by default. The separate Sites preview retains its own access permissions.
+
+If the production domain changes, update the canonical, Open Graph and Twitter image URLs in `index.html`, plus `robots.txt` and `sitemap.xml`.
+
+## Maintain content
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Introduction, navigation, background, and contact |
-| `projects.js` | Project descriptions, categories, stacks, and source links |
-| `app.js` | Filtering, search, modal details, mobile navigation, and tabs |
-| `style.css` / `enhancements.css` | Responsive design and interaction styling |
-| `assets/` | Existing portrait |
-| `profile.js` | Optional résumé downloads; empty in the public review branch |
-| `fonts/` | Self-hosted Nimbus Sans and its license |
+| `index.html` | Introduction, background, contact, and share metadata |
+| `projects.js` | Project descriptions, categories, stacks, and repository links |
+| `app.js` | Filtering, search, details, mobile navigation, and tabs |
+| `style.css` / `enhancements.css` | Responsive design and styling |
+| `profile.js` | Optional downloadable documents; public site uses a CV-request link |
+| `assets/` | Two supplied portraits and sharing image |
+| `fonts/` | Self-hosted Nimbus Sans and license |
 
-Project illustrations are system sketches, not screenshots. Project details identify sample data, prototypes, and work without a public repository. No credentials or project integration secrets are included.
-
-Content comes from the existing portfolio, the supplied résumé/CV, and the linked GitHub repositories. Education is reproduced from the supplied CV. The PDFs remain the authoritative full documents and are not committed to this public repository.
-
-## Publication
-
-This review branch does not change `main`. `vercel.json` disables Vercel automatic deployment for `codex/portfolio-enhancements-20260929`, in accordance with the owner’s instruction not to publicly deploy without approval. It does not disable deployments for other branches.
-
-The page carries `noindex, nofollow` while under private review. Before an approved public launch, remove that directive and verify the permanent domain, contact details, and downloadable CVs. Access to the separate Sites preview is enforced by Sites, not by `noindex`.
+The latest supplied portfolio identifies NUST Electrical Engineering, expected 2027; it supersedes the earlier CV education entry. Project illustrations are system sketches. Research and prototypes are labeled without invented performance results. Uploaded CV PDFs and private hosting credentials are not included in this public repository.
 
 ## Validation
 
-The delivery review covers project filtering and search, empty-state recovery, every project dialog, keyboard navigation, PDF responses, copy-email behavior, reduced motion, and widths from 320px to 1440px. See the pull request for actual results.
+Browser checks cover widths from 320 to 1440 pixels, all project dialogs and area filters, search and recovery, keyboard tabs, mobile navigation, copy-email behavior, and reduced motion. Share metadata and the preview image are checked before delivery.
