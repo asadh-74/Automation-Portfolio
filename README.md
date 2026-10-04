@@ -11,7 +11,7 @@ Production domain: https://automation-portfolio-steel.vercel.app/
 - Search, area filters, shareable filter URLs, empty-state recovery, and a show-all control.
 - Mobile navigation, keyboard-accessible dialogs and background tabs, visible focus, and reduced motion.
 - Experience, education, training, certificates and leadership, updated using the supplied portfolio document.
-- Working email and LinkedIn links, copy-email action, and CV request by email.
+- Working email and LinkedIn links, copy-email action, and a CV that opens in a new tab.
 - Open Graph and Twitter metadata, a 1200 × 630 sharing image, canonical URL, robots.txt and sitemap.
 
 ## Run locally
@@ -38,11 +38,11 @@ If the production domain changes, update the canonical, Open Graph and Twitter i
 | `projects.js` | Project descriptions, categories, stacks, and repository links |
 | `app.js` | Filtering, search, details, mobile navigation, and tabs |
 | `style.css` / `enhancements.css` | Responsive design and styling |
-| `profile.js` | Optional downloadable documents; public site uses a CV-request link |
-| `assets/` | Two supplied portraits and sharing image |
+| `profile.js` | Public CV download settings |
+| `assets/` | Two supplied portraits, sharing image, and the corrected CV |
 | `fonts/` | Self-hosted Nimbus Sans and license |
 
-The latest supplied portfolio identifies NUST Electrical Engineering, expected 2027; it supersedes the earlier CV education entry. Project illustrations are system sketches. Research and prototypes are labeled without invented performance results. Uploaded CV PDFs and private hosting credentials are not included in this public repository.
+The latest supplied portfolio identifies NUST Electrical Engineering, expected 2027; it supersedes the earlier CV education entry. Project illustrations are system sketches. Research and prototypes are labeled without invented performance results. The owner-approved public CV is in `assets/Asad-Hussain-CV.pdf`; its university entry was corrected from FAST to NUST. Other uploaded documents and private hosting credentials are not included.
 
 ## Validation
 

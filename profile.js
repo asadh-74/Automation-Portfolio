@@ -1,2 +1,6 @@
-// Direct email is available for requesting the latest CV.
-window.PORTFOLIO_PROFILE = { resumeDownloads: [] };
+// Public CV download approved by the portfolio owner.
+window.PORTFOLIO_PROFILE = {
+  resumeDownloads: [
+    { href: "/assets/Asad-Hussain-CV.pdf", label: "View my CV", meta: "PDF · 2 pages" }
+  ]
+};
