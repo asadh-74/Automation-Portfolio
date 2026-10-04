@@ -47,3 +47,7 @@ The latest supplied portfolio identifies NUST Electrical Engineering, expected 2
 ## Validation
 
 Browser checks cover widths from 320 to 1440 pixels, all project dialogs and area filters, search and recovery, keyboard tabs, mobile navigation, copy-email behavior, and reduced motion. Share metadata and the preview image are checked before delivery.
+
+## Verified profile alignment
+
+The software CV now lists B.E. Electrical Engineering at NUST, expected 2027, matching the engineering CV. FlyRank backend dates are 1 July–7 September 2026; CodeAlpha ML dates are 20 June–20 July 2026, taken from the original certificates. Both certificate images are copied into `certs/` with accessible previews; the originals remain in the engineering repository.
