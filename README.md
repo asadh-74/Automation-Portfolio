@@ -1,6 +1,6 @@
 # Asad Hussain — AI, Software & Automation
 
-A responsive portfolio with 22 projects, built with HTML, CSS, and JavaScript. No framework, build step, runtime API key, or external font service is needed.
+A responsive portfolio with 27 projects, built with HTML, CSS, and JavaScript. No framework, build step, runtime API key, or external font service is needed.
 
 Production domain: https://automation-portfolio-steel.vercel.app/
 
@@ -42,7 +42,7 @@ If the production domain changes, update the canonical, Open Graph and Twitter i
 | `assets/` | Two supplied portraits, sharing image, and the corrected CV |
 | `fonts/` | Self-hosted Nimbus Sans and license |
 
-The latest supplied portfolio identifies NUST Electrical Engineering, expected 2027; it supersedes the earlier CV education entry. Project illustrations are system sketches. Research and prototypes are labeled without invented performance results. The owner-approved public CV is in `assets/Asad-Hussain-CV.pdf`; its university entry was corrected from FAST to NUST. Other uploaded documents and private hosting credentials are not included.
+The latest supplied portfolio identifies NUST Electrical Engineering, expected 2027; it supersedes the earlier CV education entry. Project illustrations are system sketches. Research and prototypes are labeled without invented performance results. The owner-approved public CV is in `assets/Asad_Hussain_CV.pdf`, a two-page Software Engineering / AI CV. The older hyphenated PDF path is retained for existing links. Other uploaded documents and private hosting credentials are not included.
 
 ## Validation
 
@@ -51,3 +51,11 @@ Browser checks cover widths from 320 to 1440 pixels, all project dialogs and are
 ## Verified profile alignment
 
 The software CV now lists B.E. Electrical Engineering at NUST, expected 2027, matching the engineering CV. FlyRank backend dates are 1 July–7 September 2026; CodeAlpha ML dates are 20 June–20 July 2026, taken from the original certificates. Both certificate images are copied into `certs/` with accessible previews; the originals remain in the engineering repository.
+
+## October 2026 software update
+
+- Added MarketHub, AutoFlow, Usage Metering & Billing, ProjectPulse and VisionTalk Live from the owner’s GitHub repositories.
+- Updated Bid Monitor for Cymatics Technologies and Career Atlas for application tracking and submission evidence.
+- Added Web development and Backend / APIs filters. Live demos are linked in relevant project dialogs.
+- Prioritized software experience and database/cloud skills; embedded projects remain filterable, with a link to the separate engineering portfolio.
+- Updated the public two-page CV. Project metrics come from the supplied CV or repository evidence; simulated payments and prototype limitations are labeled.

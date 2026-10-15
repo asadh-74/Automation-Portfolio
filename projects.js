@@ -1,39 +1,14 @@
 // Portfolio content, maintained separately from UI behavior.
 window.PORTFOLIO_PROJECTS = [
   {
-    "id": "career",
-    "title": "Career Atlas",
-    "type": "FULL-STACK / APPLIED AI",
-    "areas": [
-      "software",
-      "agentic",
-      "automation"
-    ],
-    "visual": "career",
-    "tags": [
-      "Flutter",
-      "FastAPI",
-      "PostgreSQL",
-      "Gemini"
-    ],
-    "repo": "AI-Career",
-    "description": "An AI-assisted job discovery app with company feeds, CV-based matching, application drafts, and a review queue.",
-    "challenge": "Finding relevant roles involves scattered job listings, repeated CV review, and keeping track of what has actually been submitted.",
-    "built": [
-      "Built Flutter web and Android interfaces backed by a FastAPI API with PostgreSQL persistence.",
-      "Connected Greenhouse and Lever company feeds, deduplication, PDF CV extraction, and Gemini match explanations.",
-      "Added a review queue and manual submission tracking, with clearly labeled fallback estimates when AI is unavailable."
-    ],
-    "note": "Application submissions are completed on employer websites and confirmed by the user. Live scanning is on demand; the app does not claim universal auto-apply.",
-    "featured": true
-  },
-  {
     "id": "bids",
-    "title": "Construction Bid Monitor",
-    "type": "AUTOMATION / DATA PIPELINES",
+    "title": "Bid Monitor",
+    "type": "CYMATICS / AUTOMATION ENGINEERING",
     "areas": [
       "automation",
-      "software"
+      "software",
+      "backend",
+      "web"
     ],
     "visual": "bids",
     "tags": [
@@ -43,15 +18,133 @@ window.PORTFOLIO_PROJECTS = [
       "n8n"
     ],
     "repo": "bid-monitor",
-    "description": "A multi-source procurement monitor that collects opportunities into a durable ledger and a searchable dashboard.",
+    "description": "A procurement pipeline and searchable dashboard built at Cymatics Technologies, from source documents to reviewed outreach.",
     "challenge": "Bid information spread across dynamic pages and linked factsheets takes repeated manual checking to keep up to date.",
     "built": [
-      "Built collectors for SCA factsheets and bids, DASNY, NYSCR, and official NYC Open Data procurement datasets.",
-      "Normalized opportunities into a persistent Google Sheets ledger with source, stage, deadline, and contact-evidence fields.",
-      "Connected a searchable FastAPI dashboard and separate n8n workflows for scheduling, reviewed outreach, and delivery logging."
+      "Built Python collectors and HTML/PDF extraction for SCA, DASNY, NYSCR, TotalBidData and MyVendorLink.",
+      "Normalized procurement records in Google Sheets, retaining distinct bid, award and budget amounts, deduplication and role-labeled contact evidence.",
+      "Delivered the FastAPI dashboard, scheduled collection with GitHub Actions, and connected n8n workflows for reviewed outreach."
     ],
-    "note": "Repository-backed implementation. Source availability and parsing vary; outreach requires verified contact evidence, explicit approval, and configured credentials.",
+    "note": "Completed project at Cymatics Technologies. Collection coverage depends on each source; the SCA BidSet import is a dated snapshot, while outreach remains subject to review and verified contact evidence.",
+    "featured": true,
+    "evidence": "Completed at Cymatics Technologies",
+    "live": "https://bid-monitor.onrender.com/"
+  },
+  {
+    "id": "markethub",
+    "title": "MarketHub",
+    "type": "FULL-STACK / E-COMMERCE",
+    "areas": [
+      "software",
+      "web",
+      "backend"
+    ],
+    "visual": "commerce",
+    "tags": [
+      "Laravel 12",
+      "Vue 3",
+      "MySQL",
+      "Docker"
+    ],
+    "repo": "markethub",
+    "live": "https://markethub-b3fz.onrender.com/shop",
+    "evidence": "Role-based access · transactional checkout",
+    "description": "A multi-vendor marketplace with customer, vendor and admin workflows, inventory, orders and a responsive storefront.",
+    "challenge": "A marketplace needs separate permissions for shoppers and sellers, consistent stock, and an order flow that can recover from failure.",
+    "built": [
+      "Built a Vue 3 and Inertia.js storefront with product search, carts, orders, vendor onboarding and role-based administration.",
+      "Implemented Laravel APIs and a transactional checkout service with stock locks, validation and integer-cent pricing in MySQL.",
+      "Added PHPUnit feature tests, Docker packaging and a Render deployment backed by managed MySQL."
+    ],
+    "note": "Portfolio marketplace with simulated payments. Checkout demonstrates database integrity and failure handling; it does not charge real cards.",
     "featured": true
+  },
+  {
+    "id": "career",
+    "title": "Career Atlas",
+    "type": "FULL-STACK / APPLIED AI",
+    "areas": [
+      "software",
+      "agentic",
+      "automation",
+      "backend",
+      "web"
+    ],
+    "visual": "career",
+    "tags": [
+      "FastAPI",
+      "Flutter",
+      "PostgreSQL",
+      "LangGraph"
+    ],
+    "repo": "AI-Career",
+    "description": "An AI career assistant connecting job discovery, CV-grounded matching, application drafts and evidence-backed submission tracking.",
+    "challenge": "Finding relevant roles involves scattered job listings, repeated CV review, and keeping track of what has actually been submitted.",
+    "built": [
+      "Built FastAPI and Flutter interfaces with PostgreSQL persistence, company job feeds, PDF CV extraction and Gemini-assisted matching.",
+      "Added LangGraph workflows, Playwright form adapters, duplicate protection and bounded retries for supported application flows.",
+      "Separated prepared drafts, attempted applications and confirmed submissions, with a dashboard and stored submission evidence."
+    ],
+    "note": "Application support varies by employer and form. Unknown answers require review; an attempted application is not labeled submitted without confirmation evidence.",
+    "featured": false,
+    "evidence": "Application tracking + submission evidence",
+    "live": "https://career-atlas-yhx1.onrender.com/"
+  },
+  {
+    "id": "autoflow",
+    "title": "AutoFlow",
+    "type": "BACKEND / BUSINESS AUTOMATION",
+    "areas": [
+      "software",
+      "backend",
+      "automation",
+      "web"
+    ],
+    "visual": "autoflow",
+    "tags": [
+      "Spring Boot",
+      "FastAPI",
+      "PostgreSQL",
+      "n8n"
+    ],
+    "repo": "AutoFlow",
+    "evidence": "Java + Python services · workflow tracking",
+    "description": "A business automation workspace that connects customer records, workflow runs, CSV cleaning and reports in one dashboard.",
+    "challenge": "Customer data and repetitive operations often sit in disconnected tools, making it difficult to see what ran and what failed.",
+    "built": [
+      "Created a Spring Boot customer API and PostgreSQL persistence, with a responsive JavaScript dashboard.",
+      "Integrated n8n webhooks, execution records and error handling, plus a FastAPI CSV cleaning and reporting service.",
+      "Packaged services with Docker, GitHub Actions CI and a Render deployment blueprint."
+    ],
+    "note": "Repository-backed application. Workflow execution requires a configured n8n endpoint and credentials; a deployment blueprint is included.",
+    "featured": false
+  },
+  {
+    "id": "billing",
+    "title": "Usage Metering & Billing",
+    "type": "FLYRANK / BACKEND ENGINEERING",
+    "areas": [
+      "software",
+      "backend"
+    ],
+    "visual": "billing",
+    "tags": [
+      "FastAPI",
+      "PostgreSQL",
+      "Stripe test mode",
+      "pytest"
+    ],
+    "repo": "flyrank-capstone-metering-billing.",
+    "evidence": "27 documented passing automated tests",
+    "description": "A backend capstone for tenant usage, quota enforcement and retry-safe billing events, with verifiable webhook handling.",
+    "challenge": "Usage events can be retried or delivered twice. Billing infrastructure must preserve accurate totals and enforce tenant limits consistently.",
+    "built": [
+      "Built authenticated FastAPI endpoints and PostgreSQL-backed metering with tenant-scoped idempotency keys and quota enforcement.",
+      "Added decimal-based AI token pricing and signature-verified, deduplicated Stripe test-mode webhooks.",
+      "Packaged the service with Docker and documented a local test run with 27 passing automated tests."
+    ],
+    "note": "FlyRank internship capstone. Stripe runs in test mode; the documented test evidence does not imply live financial processing.",
+    "featured": false
   },
   {
     "id": "support",
@@ -60,7 +153,8 @@ window.PORTFOLIO_PROJECTS = [
     "areas": [
       "agentic",
       "automation",
-      "software"
+      "software",
+      "backend"
     ],
     "featured": false,
     "visual": "support",
@@ -81,13 +175,96 @@ window.PORTFOLIO_PROJECTS = [
     "note": "Portfolio prototype. Order lookup uses sample data; a production rollout would require real integrations, persistent audit storage, and an evaluation set."
   },
   {
+    "id": "canopy",
+    "title": "CanopyNet",
+    "type": "AI / ML · CLASSIFICATION",
+    "areas": [
+      "ml"
+    ],
+    "visual": "canopy",
+    "tags": [
+      "TensorFlow",
+      "Keras",
+      "Scikit-learn",
+      "XGBoost"
+    ],
+    "description": "A forest-cover classification pipeline comparing a tuned neural network with tree-based baselines.",
+    "challenge": "Structured environmental data requires a reproducible comparison of model families and class-level performance.",
+    "built": [
+      "Built a pipeline for the UCI Forest Covertype dataset with 581,012 samples, 54 features, and seven classes.",
+      "Compared a tuned MLP with Random Forest and XGBoost baselines.",
+      "Reported 95.93% test accuracy and 0.94 macro F1 in the supplied résumé."
+    ],
+    "note": "Results are reported in the supplied résumé and existing portfolio; no experiment artifact or public repository is linked here.",
+    "featured": false,
+    "evidence": "95.93% test accuracy · 0.94 macro F1"
+  },
+  {
+    "id": "projectpulse",
+    "title": "ProjectPulse",
+    "type": "WEB DEVELOPMENT / TEAM WORKFLOWS",
+    "areas": [
+      "software",
+      "web",
+      "backend"
+    ],
+    "visual": "board",
+    "tags": [
+      "Laravel",
+      "Blade",
+      "Sanctum",
+      "PHPUnit"
+    ],
+    "repo": "projectpulse",
+    "evidence": "Permissions · REST API · feature tests",
+    "description": "A collaborative task-management application with a drag-and-drop Kanban board, team permissions and token-secured APIs.",
+    "challenge": "Shared project boards need clear ownership and authorization, with dependable data access across the interface and API.",
+    "built": [
+      "Implemented Laravel application features and a responsive Blade/JavaScript Kanban board with drag-and-drop task updates.",
+      "Added team policies, Sanctum token authentication, relational data, validation and pagination.",
+      "Integrated cached holiday data with retry/fallback handling and PHPUnit coverage in GitHub Actions."
+    ],
+    "note": "Application-layer portfolio project. The repository documents installation into a Laravel application; no public production deployment is claimed.",
+    "featured": false
+  },
+  {
+    "id": "visiontalk",
+    "title": "VisionTalk Live",
+    "type": "MULTIMODAL AI / INTERACTIVE WEB",
+    "areas": [
+      "software",
+      "agentic",
+      "web"
+    ],
+    "visual": "visiontalk",
+    "tags": [
+      "FastAPI",
+      "Vision-language API",
+      "Web Speech",
+      "JavaScript"
+    ],
+    "repo": "visiontalk-live",
+    "evidence": "Webcam + voice + conversational interface",
+    "description": "A multimodal assistant that combines camera frames, spoken questions and conversational responses in a browser interface.",
+    "challenge": "Visual assistants need to connect what a camera sees with conversational context and accessible voice interaction.",
+    "built": [
+      "Connected webcam frames, user questions and conversation history to a vision-language API through FastAPI.",
+      "Added browser speech recognition, speech synthesis and an animated SVG avatar.",
+      "Implemented optional automatic commentary and a companion Streamlit demo."
+    ],
+    "note": "Multimodal prototype using an external model API. Voice features depend on browser support; it does not claim a custom-trained vision model.",
+    "featured": false
+  },
+  {
     "id": "rag",
     "title": "Agentic Knowledge Assistant",
     "type": "AI APPLICATION / DOCUMENT INTELLIGENCE",
     "areas": [
       "agentic",
       "ml",
-      "software"
+      "software",
+      "web",
+      "backend"
     ],
     "featured": false,
     "visual": "rag",
@@ -138,7 +315,8 @@ window.PORTFOLIO_PROJECTS = [
     "title": "Aeterna Watches",
     "type": "SOFTWARE / E-COMMERCE EXPERIENCE",
     "areas": [
-      "software"
+      "software",
+      "web"
     ],
     "visual": "watch",
     "tags": [
@@ -188,7 +366,9 @@ window.PORTFOLIO_PROJECTS = [
     "title": "FlowBoard",
     "type": "SOFTWARE / FULL-STACK DEVELOPMENT",
     "areas": [
-      "software"
+      "software",
+      "web",
+      "backend"
     ],
     "visual": "board",
     "tags": [
@@ -231,30 +411,6 @@ window.PORTFOLIO_PROJECTS = [
       "Kept reorder email sending behind explicit human approval."
     ],
     "note": "Workflow described in the existing portfolio. No public source repository is linked.",
-    "featured": false
-  },
-  {
-    "id": "canopy",
-    "title": "CanopyNet",
-    "type": "AI / ML · CLASSIFICATION",
-    "areas": [
-      "ml"
-    ],
-    "visual": "canopy",
-    "tags": [
-      "TensorFlow",
-      "Keras",
-      "Scikit-learn",
-      "XGBoost"
-    ],
-    "description": "A forest-cover classification pipeline comparing a tuned neural network with tree-based baselines.",
-    "challenge": "Structured environmental data requires a reproducible comparison of model families and class-level performance.",
-    "built": [
-      "Built a pipeline for the UCI Forest Covertype dataset with 581,012 samples, 54 features, and seven classes.",
-      "Compared a tuned MLP with Random Forest and XGBoost baselines.",
-      "Reported 95.93% test accuracy and 0.94 macro F1 in the supplied résumé."
-    ],
-    "note": "Results are reported in the supplied résumé and existing portfolio; no experiment artifact or public repository is linked here.",
     "featured": false
   },
   {
