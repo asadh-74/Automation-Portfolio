@@ -46,7 +46,7 @@ function applyFilters(updateURL = true) {
   grid.classList.toggle('filtered', selectedFilter !== 'all' || !!query);
   filters.forEach(button => {const active=button.dataset.filter===selectedFilter;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
   projects.forEach(p => {grid.querySelector('[data-project="'+p.id+'"]').hidden = !visible.includes(p);});
-  document.getElementById('project-count').textContent = visible.length === matching.length ? matching.length+' projects' : visible.length+' selected / '+matching.length+' projects';
+  document.getElementById('project-count').textContent = visible.length === matching.length ? matching.length+(matching.length === 1 ? ' project' : ' projects') : visible.length+' selected / '+matching.length+' projects';
   document.getElementById('empty-state').hidden = matching.length > 0;
   showMore.hidden = visible.length === matching.length;
   showMore.innerHTML = 'Explore all '+projects.length+' projects <span aria-hidden="true">↓</span>';
