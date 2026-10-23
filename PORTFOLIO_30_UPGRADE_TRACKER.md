@@ -9,7 +9,7 @@ A reproducible setup, real end-to-end happy path, meaningful failure-path tests,
 | # | Repository | Upgrade and acceptance demonstration | Status |
 |---|---|---|---|
 | 1 | [AutoFlow](https://github.com/asadh-74/AutoFlow) | Lead intake → deduplication → structured recommendation → explicitly approved CRM action; retry and failure evidence. | Advisory upgrade live; broader workflow audit pending |
-| 2 | [ai-support-triage-agent](https://github.com/asadh-74/ai-support-triage-agent) | Policy evidence → edited reply → approval/escalation → export; search, queue totals and conflict recovery. | Queue improvement in progress |
+| 2 | [ai-support-triage-agent](https://github.com/asadh-74/ai-support-triage-agent) | Policy evidence → edited reply → approval/escalation → export; search, queue totals and conflict recovery. | Queue upgrade deployed; 31 backend tests passed; live workflow verification in progress |
 | 3 | [PayPilot](https://github.com/asadh-74/PayPilot) | Natural-language invoice preview → validated totals → approval → invoice; sandbox delivery and payment reconciliation proof. | README reviewed; implementation audit pending |
 | 4 | [Ai-data-Analyst](https://github.com/asadh-74/Ai-data-Analyst) | Messy CSV → quality report → verified KPIs → export; scheduled runs with visible failures. | README reviewed; implementation audit pending |
 | 5 | [healthops](https://github.com/asadh-74/healthops) | Fictional booking → atomic stock reservation → cancellation reversal → low-stock workflow; role separation. | README reviewed; implementation audit pending |
