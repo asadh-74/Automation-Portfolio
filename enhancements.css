@@ -14,3 +14,17 @@
 
 /* Center the new straight-on professional portrait consistently. */
 .hero-portrait{object-position:50% 16%}.about-photo img{object-position:50% 18%}
+
+/* Atomcamp training and future certificate slot */
+#training-panel .credential-grid{grid-template-columns:1fr;max-width:900px}
+.atomcamp-card{display:grid;grid-template-columns:minmax(210px,.82fr) minmax(0,1.5fr);gap:28px;align-items:center;padding:22px;border:1px solid #273b42;border-radius:10px;background:linear-gradient(145deg,#101c22,#0c1318)}
+.atomcamp-placeholder{aspect-ratio:1.38;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center;color:#162329;background:linear-gradient(145deg,#f6f8f7,#dfe9e7);border:7px solid #f4f7f6;border-radius:7px;box-shadow:0 10px 28px #0004}
+.atomcamp-placeholder-icon{font-size:30px;color:#168e83}
+.atomcamp-placeholder-label{font:8px var(--mono);letter-spacing:1.5px;color:#47706b}
+.atomcamp-placeholder strong{font-size:15px;line-height:1.3}
+.atomcamp-placeholder small{font-size:10px;color:#667d79}
+.atomcamp-details h3{font-size:22px;font-weight:400;margin:10px 0}
+.atomcamp-details p{font-size:12px;color:var(--muted);line-height:1.75}
+.atomcamp-details .atomcamp-date{font:9px var(--mono);letter-spacing:.7px;color:var(--accent)}
+.certificate-pending{display:inline-block;margin-top:8px;opacity:.8;cursor:default}
+@media(max-width:640px){.atomcamp-card{grid-template-columns:1fr;padding:16px}.atomcamp-placeholder{max-width:100%}}
