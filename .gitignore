@@ -1,5 +1,14 @@
 node_modules/
 qa/
 .DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+credentials*.json
+service-account*.json
 assets/*.pdf
 !assets/Asad-Hussain-CV.pdf
