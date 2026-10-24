@@ -1,6 +1,6 @@
 # 30-project portfolio upgrade tracker
 
-Status date: 23 October 2026. This is an implementation backlog, not a claim that 30 apps are complete. Repository README inspection was completed for 29 candidates; GenAI SaaS is empty. Each feature below is a target unless marked delivered. DocFlow remains part of AutoFlow rather than being counted twice.
+Status date: 24 October 2026. This is an implementation backlog, not a claim that 30 apps are complete. Repository README inspection was completed for 29 candidates; GenAI SaaS has since been implemented as ScopeCraft; Research Desk has a new deployed evidence workspace. Each feature below is a target unless marked delivered. DocFlow remains part of AutoFlow rather than being counted twice.
 
 ## Definition of ready
 
@@ -14,8 +14,8 @@ A reproducible setup, real end-to-end happy path, meaningful failure-path tests,
 | 4 | [Ai-data-Analyst](https://github.com/asadh-74/Ai-data-Analyst) | Messy CSV → quality report → verified KPIs → export; scheduled runs with visible failures. | README reviewed; implementation audit pending |
 | 5 | [healthops](https://github.com/asadh-74/healthops) | Fictional booking → atomic stock reservation → cancellation reversal → low-stock workflow; role separation. | README reviewed; implementation audit pending |
 | 6 | [aeterna-watches](https://github.com/asadh-74/aeterna-watches) | Product edit → inventory sync → conflict resolution → safe retry; no duplicate stock decrements. | README reviewed; implementation audit pending |
-| 7 | [agentcrew-research-desk](https://github.com/asadh-74/agentcrew-research-desk) | Sourced research → citation validation → critic review → export; remove dependency on unavailable local runtime for hosted demo. | Suspended: runtime/deployment redesign required; without Supabase current backend accepts jobs but cannot retrieve results |
-| 8 | [genai-Saas-Product](https://github.com/asadh-74/genai-Saas-Product) | Build a distinct AI proposal workspace: brief → scope → quote draft → approval → version history; no autonomous sending. | Empty: new implementation required |
+| 7 | [agentcrew-research-desk](https://github.com/asadh-74/agentcrew-research-desk) | Evidence briefs from supplied excerpts, optional protected AI summary, browser-local persistence and exports. | New demo live; generation, approval, reload and Markdown export verified; real AI not configured. |
+| 8 | [genai-Saas-Product](https://github.com/asadh-74/genai-Saas-Product) | ScopeCraft: validated estimates, milestones, review, browser-local persistence and backups. | Demo live on shared service; generation, total, approval, reload and backup/restore verified; real AI not configured. |
 | 9 | [agentic-rag-assistant](https://github.com/asadh-74/agentic-rag-assistant) | Document upload → session-isolated retrieval → cited answer → abstention; durable storage and evaluation set. | README reviewed; implementation audit pending |
 | 10 | [Agentic-RAG-Knowledge-Assistant-AtomBot-](https://github.com/asadh-74/Agentic-RAG-Knowledge-Assistant-AtomBot-) | Repair packaging/docs; document/search routing with LangGraph, visible workflow trace and grounding checks. | README reviewed; implementation audit pending |
 | 11 | [Network-Intrusion-Detection](https://github.com/asadh-74/Network-Intrusion-Detection) | Batch connection records → schema checks → classifier → benchmark report; no claims of live network protection. | README reviewed; implementation audit pending |
@@ -46,3 +46,6 @@ A reproducible setup, real end-to-end happy path, meaningful failure-path tests,
 3. Remaining operations, analytics, embedded-adjacent and benchmark projects: implement against the acceptance demonstrations above.
 
 Publish each project only after its own checks pass. Private Career Atlas data must not be included in a public demonstration. Benchmark medical and credit projects stay educational.
+
+
+Detailed release evidence: [Research Desk and ScopeCraft](RESEARCH_AND_SCOPECRAFT_RELEASE.md).
